@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lentera Daya Persada</title>
+<style>
+    :root {
+        --primary: #0a2342; /* Biru tua */
+        --accent: #d4af37;  /* Gold */
+        --text-light: #ffffff;
+        --container-bg: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: var(--primary);
+        color: var(--text-light);
+        line-height: 1.6;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-bottom: 2px solid var(--accent);
+        flex-wrap: wrap;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    .akses {
+        text-align: right;
+        font-size: 12px;
+        color: var(--accent);
+    }
+
+    main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container {
+        background: var(--container-bg);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: var(--accent);
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .ketua {
+        text-align: right;
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--accent);
+        margin-top: 15px;
+    }
+
+    .ketua .jabatan {
+        font-weight: normal;
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        text-align: center;
+        border-top: 2px solid var(--accent);
+        font-size: 0.85rem;
+    }
+
+    footer p {
+        margin: 4px 0;
+    }
+
+    footer a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+        header img {
+            height: 70px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p, ul li {
+            font-size: 1rem;
+        }
+        .akses {
+            font-size: 14px;
+        }
+        footer {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="corel.png" alt="Logo Lentera Daya Persada">
+    <div class="akses">
+        <strong>Diakses pada</strong><br>
+        <span id="tanggal"></span><br>
+        <span id="waktu"></span>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Lentera Daya Persada</h1>
+        <p>Lentera Daya Persada adalah lembaga pelatihan dan pengembangan nasional yang dikelola secara profesional berdasarkan falsafah visi dan misi lembaga dalam memberikan pelayanan optimal di bidang peningkatan kapasitas sumber daya manusia. Komitmen kami adalah mendukung individu, instansi, dan organisasi mitra dalam mencapai tujuan pengembangan yang berkelanjutan dan berdampak.</p>
+        <p>Didukung oleh instruktur dan fasilitator yang kompeten, berpengalaman, serta tersertifikasi, Lentera Daya Persada siap menjadi bagian dari proses transformasi mitra menuju kualitas SDM yang unggul, adaptif, dan siap bersaing di era global. Ketersediaan tim pelatih yang kredibel dan sistem pelatihan yang terstruktur menjadi kekuatan utama kami dalam memberikan layanan terbaik.</p>
+        <p>Sebagai lembaga yang berorientasi pada kepuasan mitra, Lentera Daya Persada senantiasa memenuhi seluruh aspek persyaratan hukum dan standar mutu dalam menjalankan program pelatihan dan pendampingan. Kami menjunjung tinggi integritas, kualitas layanan, serta akuntabilitas dalam setiap kegiatan yang diselenggarakan.</p>
+        <p>Pertumbuhan dan kepercayaan dari berbagai pihak telah kami rasakan sejak Lentera Daya Persada berdiri. Sejak awal pendirian hingga saat ini, kami telah menjalin kerja sama dengan berbagai institusi, baik dari sektor pemerintah maupun swasta, dalam upaya mendorong peningkatan kapasitas dan kompetensi SDM di berbagai bidang.</p>
+    </div>
+
+    <div class="container">
+        <h2>Visi</h2>
+        <p>Menjadi lembaga pelatihan terdepan yang mendorong transformasi sumber daya manusia yang unggul, profesional, dan adaptif di era global.</p>
+    </div>
+
+    <div class="container">
+        <h2>Misi</h2>
+        <ul>
+            <li>Menyelenggarakan program pelatihan dan pengembangan SDM yang berkualitas, berbasis kebutuhan mitra, dan relevan dengan tantangan zaman.</li>
+            <li>Membangun kemitraan strategis dengan instansi pemerintah, swasta, dan masyarakat dalam upaya peningkatan kapasitas sumber daya manusia.</li>
+            <li>Menghadirkan narasumber dan fasilitator yang kompeten, berpengalaman, dan berintegritas tinggi.</li>
+            <li>Mengembangkan metode pelatihan yang inovatif, aplikatif, dan berdampak langsung, baik melalui pendekatan tatap muka maupun digital.</li>
+            <li>Menjadi pusat pembelajaran berkelanjutan (learning center) yang mendorong budaya belajar sepanjang hayat.</li>
+        </ul>
+    </div>
+
+    <div class="container ketua">
+        Firdian Setiya Arinata, S.Pd, M.Pd<br>
+        <span class="jabatan">(Ketua Lembaga)</span>
+    </div>
+</main>
+
+<footer>
+    <p>📍 Jl. Bromo 1, Clolo, Banjarsari, Kota Surakarta, Jawa Tengah</p>
+    <p>📞 <a href="tel:085174117500">0851 7411 7500</a> | ✉ <a href="mailto:lenteradayapersada25@gmail.com">lenteradayapersada25@gmail.com</a></p>
+    <p>&copy; 2025 Lentera Daya Persada. All rights reserved.</p>
+</footer>
+
+<script>
+    function formatTanggal(tanggal) {
+        const options = { day: '2-digit', month: 'long', year: 'numeric' };
+        return tanggal.toLocaleDateString('id-ID', options);
+    }
+    function formatWaktu(tanggal) {
+        return tanggal.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    const now = new Date();
+    document.getElementById('tanggal').textContent = "Tanggal: " + formatTanggal(now);
+    document.getElementById('waktu').textContent = "Waktu: " + formatWaktu(now);
+</script>
+
+</body>
+</html>
